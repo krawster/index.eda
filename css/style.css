@@ -160,6 +160,7 @@
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 20px;
+  margin: -25px;
 }
 
 .card {
@@ -172,7 +173,9 @@
   overflow: hidden;
   max-width: 570px;
   min-height: 380px;
-  width: 100%;
+  /* width: 100%; */
+  flex: 50%;
+  margin: 25px;
 }
 
 .card::before {
@@ -229,4 +232,271 @@
   height: 100%;
   z-index: -2;
   object-fit: cover;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 47px;
+}
+
+/* DELIVERY */
+.delivery-week {
+  padding: 100px 0;
+}
+
+.delivery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.delivery-card {
+  position: relative;
+  width: 275px;
+  height: 182px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 15px;
+}
+
+.delivery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.delivery-tag {
+  position: absolute;
+  padding: 5px 10px;
+  top: 16px;
+  left: 10px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+/* TAGS */
+.tag-health {
+  background: #d0fd89;
+  color: #49494f;
+}
+.tag-vegan {
+  background: #aebc41;
+  color: #fff;
+}
+.tag-meat {
+  background: #b86b78;
+  color: #fff;
+}
+.tag-cheek {
+  background: #d68334;
+  color: #fff;
+}
+.tag-fish {
+  background: #cd6255;
+  color: #fff;
+}
+.tag-kids {
+  background: #fffdbf;
+  color: #49494f;
+}
+.tag-parents {
+  background: #f6fdc8;
+  color: #49494f;
+}
+.tag-happy {
+  background: #fef7fe;
+  color: #49494f;
+}
+
+/* CATEGORY  */
+.section-gray {
+  background: #f6f6f6;
+}
+.category {
+  padding: 40px 0 40px;
+}
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  color: #000;
+}
+
+.tabs {
+  display: flex;
+  margin: 0;
+  margin-bottom: 62px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tab-link {
+  text-decoration: none;
+  padding-right: 58px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #49494f;
+}
+
+.tab-link.active {
+  color: #f37321;
+}
+
+.tabs-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs-card {
+  max-width: 270px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.tabs-image {
+  max-width: 100%;
+}
+
+.tabs-card-content {
+  padding: 23px;
+}
+
+.tabs-title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.tabs-description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #b9b9be;
+}
+
+.tabs-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabs-price {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4b4b51;
+  margin-bottom: 5px;
+}
+
+.tabs-weight {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  color: #aaaab1;
+}
+.button-outline {
+  background-color: transparent;
+  border: 2px solid #f37321;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  border-radius: 33px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #f37321;
+  cursor: pointer;
+}
+
+.button-center {
+  display: block;
+  margin: 60px auto;
+  width: 315px;
+}
+
+/* TEASER */
+.section-teaser {
+  padding-top: 100px;
+}
+.teaser-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.teaser-card {
+  text-align: center;
+  max-width: 270px;
+  height: 296px;
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  padding: 25px;
+}
+.teaser-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.teaser-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.teaser-description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #49494f;
+}
+
+.footer {
+  padding: 40px 0;
+  background: #f6f6f6;
+}
+.footer-wraper {
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  margin-right: 50px;
+}
+.footer-link {
+  margin-right: 50px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.socail-link {
+  text-decoration: none;
+  margin-left: 20px;
 }
